@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * Contains hook implementations for the Group Concat module.
+ */
+
+/**
+ * Implements hook_views_data_alter().
+ *
+ * Alters the views data to set a custom query for base tables.
+ */
+function group_concat_views_data_alter(array &$data) {
+  foreach ($data as $table => &$table_data) {
+    if (isset($table_data['table']['base'])) {
+      $table_data['table']['base']['query_id'] = 'concat_query';
+    }
+  }
+}

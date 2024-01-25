@@ -1,0 +1,7 @@
+name: Group Concat Aggregate
+type: module
+description: Provides an aggregate function for concatenating values in a group.
+core_version_requirement: ^8 || ^9 || ^10
+package: Custom
+dependencies:
+  - drupal:views

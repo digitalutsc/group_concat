@@ -1,0 +1,7 @@
+{
+    "name": "drupal/group_concat",
+    "description": "Adds GROUP_CONCAT aggregate method into Views",
+    "type": "drupal-module",
+    "minimum-stability": "dev",
+    "require": {}
+}
